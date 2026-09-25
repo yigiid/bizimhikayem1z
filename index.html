@@ -330,6 +330,41 @@
       .note-one { top: 6%; right: 12%; animation: float 3.4s ease-in-out infinite; }
       .note-two { bottom: 9%; left: 10%; color: var(--gold); animation: float 3.4s ease-in-out -1.4s infinite; }
 
+      /* Cringe Buton Stili */
+      .cringe-section {
+        margin-top: 26px;
+        text-align: center;
+      }
+
+      .cringe-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 16px 36px;
+        background: linear-gradient(135deg, var(--rose) 0%, var(--rose-deep) 100%);
+        color: white;
+        font-family: "DM Sans", sans-serif;
+        font-size: 1.05rem;
+        font-weight: 700;
+        letter-spacing: 0.05em;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        box-shadow: 0 10px 25px rgba(199, 76, 112, 0.3);
+        transition: all 0.25s ease;
+      }
+
+      .cringe-btn:hover {
+        transform: translateY(-3px) scale(1.03);
+        box-shadow: 0 15px 30px rgba(199, 76, 112, 0.4);
+        background: linear-gradient(135deg, #d8577d 0%, #b83d63 100%);
+      }
+
+      .cringe-btn:active {
+        transform: translateY(1px) scale(0.98);
+        box-shadow: 0 5px 15px rgba(199, 76, 112, 0.2);
+      }
+
       footer { padding-bottom: 30px; color: var(--muted); font-size: 0.83rem; text-align: center; }
       footer p { margin: 0; }
       footer span { color: var(--rose); }
@@ -423,6 +458,11 @@
             <span class="note note-two" aria-hidden="true">♫</span>
           </div>
         </section>
+
+        <!-- Sadece Cringe Buton -->
+        <div class="cringe-section">
+          <button class="cringe-btn" type="button">Cringe Buton</button>
+        </div>
       </main>
 
       <footer>
